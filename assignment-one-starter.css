@@ -31,13 +31,13 @@
 }
 
 /* For tablet layouts */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .card {
     width: calc(50% - 2rem);
   }
 
   /* Make the last card full width */
-  .card:nth-last-child(1) {
+  .card:nth-child(4n) {
     width: calc(100% - 2rem);
   }
 }
@@ -49,7 +49,7 @@
   }
 
   /* Center-aligns every third card to maintain proper alignment */
-  .card:nth-child(3n+1) {
+  .card:nth-child(3n) {
     margin: 0 auto;
   }
 }
